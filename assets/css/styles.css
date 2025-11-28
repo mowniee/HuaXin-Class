@@ -1,0 +1,445 @@
+/* =========================================================
+   CORE VARIABLES (COLOR SYSTEM) - PROFESSIONAL PALETTE
+   ========================================================= */
+:root{
+  --hx-primary: #D62828; /* Merah brand */
+  --hx-secondary: #F5B700; /* Emas */
+  --hx-dark: #22222A;
+  --hx-light: #F2F2F2;
+  --hx-white: #ffffff;
+  --hx-text: #333333;
+  --hx-border: #EAEAEA;
+
+  /* Glass defaults tuned to new palette */
+  --glass-bg: rgba(255,255,255,0.7);
+  --glass-border: rgba(0,0,0,0.06);
+  --glass-shadow: rgba(0,0,0,0.06);
+}
+
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --site-footer-height: 120px;
+  background-color: var(--hx-light);
+  color: var(--hx-text);
+  font-family: 'Inter', 'Poppins', 'Nunito', 'system-ui', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--hx-dark);
+  letter-spacing: -0.5px;
+}
+
+p {
+  color: var(--hx-text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--hx-primary);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+a:hover {
+  color: var(--hx-secondary);
+}
+
+/* =========================================================
+   HERO GRADIENT
+   ========================================================= */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--hx-primary) 0%, var(--hx-secondary) 100%);
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-gradient h2 {
+  color: #ffffff;
+}
+
+.hero-gradient p {
+  color: rgba(255,255,255,0.95);
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+/* Universal button reset */
+.btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Solid button - strong CTA */
+.btn-secondary {
+  background: linear-gradient(135deg, var(--hx-primary) 0%, var(--hx-secondary) 100%);
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.btn-secondary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Outline button - secondary action */
+.btn-primary {
+  background: transparent;
+  color: var(--hx-primary);
+  border: 2px solid var(--hx-primary);
+  padding: 0.6rem 1.3rem;
+}
+
+.btn-primary:hover {
+  background: rgba(214,40,40,0.06);
+  border-color: var(--hx-secondary);
+  color: var(--hx-secondary);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.hero-gradient .btn-primary {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.hero-gradient .btn-primary:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* FOCUS ACCESSIBILITY */
+a:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(214,40,40,0.12);
+  border-radius: 12px;
+}
+
+
+/* =========================================================
+   GLASSMORPHISM (PROGRAM PAGE + HARGA PAGE)
+   ========================================================= */
+
+.glass-card {
+  background: rgba(255,255,255,0.6);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: all 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+  color: var(--hx-text);
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.08);
+  border-color: var(--hx-secondary);
+}
+
+.glass-card h3,
+.glass-card p,
+.glass-card li {
+  color: var(--hx-text);
+}
+
+/* Light version (Harga page) */
+.glass-card-light {
+  background: linear-gradient(135deg, rgba(245,183,0,0.06) 0%, rgba(255,255,255,0.7) 100%);
+  border: 1px solid var(--hx-border);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: all 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.glass-card-light:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+  border-color: var(--hx-secondary);
+  background: linear-gradient(135deg, rgba(245,183,0,0.08) 0%, rgba(255,255,255,0.85) 100%);
+}
+
+.glass-card-light h3,
+.glass-card-light p,
+.glass-card-light li {
+  color: var(--hx-text);
+}
+
+/* Button inside glass */
+.glass-card .btn-primary {
+  background: linear-gradient(135deg, var(--hx-primary) 0%, var(--hx-secondary) 100%);
+  color: #fff;
+  border: none;
+}
+
+.glass-card .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(214,40,40,0.14);
+}
+
+
+/* =========================================================
+   SMALL CARD (TESTIMONIAL PAGE, WHY CHOOSE)
+   ========================================================= */
+.small-card {
+  background: linear-gradient(135deg, rgba(245,183,0,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  border-radius: 14px;
+  padding: 1.5rem;
+  color: var(--hx-text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid var(--hx-border);
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.small-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(214,40,40,0.12);
+  border-color: rgba(214,40,40,0.12);
+  background: linear-gradient(135deg, rgba(245,183,0,0.06) 0%, rgba(255,255,255,0.04) 100%);
+}
+
+.small-card p,
+.small-card li {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--hx-text);
+}
+
+
+/* =========================================================
+   TESTIMONIAL PAGE LAYOUT
+   ========================================================= */
+.testimonials-section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.testimonials-headline {
+  margin-bottom: 18px;
+}
+
+/* Grid for Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+/* reveal section slide-up */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* page fade */
+.page-fade-enter {
+  opacity: 0;
+}
+
+.page-fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.page-fade-exit {
+  opacity: 1;
+}
+
+.page-fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+
+/* =========================================================
+   FOOTER STYLE (ELEGANT & PROFESSIONAL)
+   ========================================================= */
+.site-footer {
+  background: linear-gradient(180deg, rgba(214,40,40,0.03) 0%, rgba(245,183,0,0.03) 100%);
+  border-top: 1px solid var(--hx-border);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: var(--hx-text);
+}
+
+.site-footer h3,
+.site-footer h4 {
+  color: var(--hx-dark);
+}
+
+.site-footer p,
+.site-footer li {
+  color: var(--hx-text);
+}
+
+.site-footer a {
+  color: var(--hx-text);
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: var(--hx-primary);
+}
+
+/* Avoid footer overlapping on small devices */
+body {
+  --site-footer-height: 120px;
+  background-color: var(--hx-light);
+  color: var(--hx-text);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General text color improvements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--hx-dark);
+}
+
+p {
+  color: var(--hx-text);
+}
+
+/* Links styling */
+a {
+  color: var(--hx-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--hx-secondary);
+}
+
+
+/* =========================================================
+   MISC UTILITIES
+   ========================================================= */
+
+.header-cta {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.text-shadow-light {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.rounded-14 { border-radius: 14px; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .glass-card,
+  .glass-card-light {
+    padding: 1.25rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.6rem 1.2rem;
+    font-size: 14px;
+  }
+  
+  .small-card {
+    padding: 1.25rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Smooth transitions for interactive elements */
+button, [role="button"], a {
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Site header styling */
+.site-header {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hx-border);
+  transition: all 0.3s ease;
+}
+
+.site-header a {
+  color: var(--hx-dark);
+  transition: color 0.3s ease;
+}
+
+.site-header a:hover {
+  color: var(--hx-primary);
+}

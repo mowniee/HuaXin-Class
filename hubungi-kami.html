@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hubungi Kami — HuaXin Class</title>
+
+  <!-- Font & Tailwind CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+              'hx-red': '#D62828',
+              'hx-gold': '#F5B700',
+              'hx-light': '#F2F2F2',
+              'hx-dark': '#22222A'
+          },
+          fontFamily: {
+            sans: ['Inter','Poppins','Nunito','system-ui','sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="antialiased text-hx-text bg-hx-light">
+  <header class="w-full z-40 site-header">
+    <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+      <div class="grid grid-cols-12 items-center gap-2 sm:gap-4">
+        <div class="col-span-8 sm:col-span-6 md:col-span-3 min-w-0">
+          <a href="index.html" class="flex items-center gap-2 sm:gap-3">
+            <div class="w-9 sm:w-10 h-9 sm:h-10 rounded-lg flex-shrink-0 flex items-center justify-center" style="background:linear-gradient(135deg,#D62828,#F5B700);">
+              <span class="text-white font-bold text-sm sm:text-base">HX</span>
+            </div>
+            <div class="min-w-0">
+              <h1 class="text-sm sm:text-lg font-semibold text-hx-dark truncate">HuaXin Class</h1>
+              <p class="text-xs text-hx-text opacity-90 hidden sm:block">华心课堂 (Huáxīn Kètáng)</p>
+            </div>
+          </a>
+        </div>
+
+        <nav class="hidden md:flex col-span-6 md:col-span-6 justify-center gap-4 lg:gap-6" aria-label="Main navigation">
+          <a href="index.html" class="text-xs lg:text-sm font-medium text-hx-dark hover:text-hx-red transition-colors whitespace-nowrap">Home</a>
+          <a href="about.html" class="text-xs lg:text-sm font-medium text-hx-dark hover:text-hx-red transition-colors whitespace-nowrap">Tentang Kami</a>
+          <a href="program.html" class="text-xs lg:text-sm font-medium text-hx-dark hover:text-hx-red transition-colors whitespace-nowrap">Program</a>
+          <a href="harga.html" class="text-xs lg:text-sm font-medium text-hx-dark hover:text-hx-red transition-colors whitespace-nowrap">Harga</a>
+          <a href="location.html" class="text-xs lg:text-sm font-medium text-hx-dark hover:text-hx-red transition-colors whitespace-nowrap">Lokasi</a>
+          <a href="testimoni.html" class="text-xs lg:text-sm font-medium text-hx-dark hover:text-hx-red transition-colors whitespace-nowrap">Testimoni</a>
+          <a href="hubungi-kami.html" class="text-xs lg:text-sm font-medium text-hx-dark hover:text-hx-red transition-colors whitespace-nowrap">Hubungi Kami</a>
+        </nav>
+
+        <div class="col-span-4 sm:col-span-6 md:col-span-3 flex justify-end gap-2 sm:gap-3 items-center">
+          <button id="mobileMenuBtn" aria-controls="mobileNav" aria-expanded="false" class="md:hidden inline-flex items-center justify-center p-1.5 sm:p-2 rounded-lg border border-hx-border bg-white hover:bg-hx-light flex-shrink-0">
+            <svg class="w-5 sm:w-6 h-5 sm:h-6 text-hx-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+          <a href="hubungi-kami.html" class="btn-secondary inline-block text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 flex-shrink-0">Daftar</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="md:hidden bg-white border-t border-hx-border" style="display: none;">
+      <div class="px-4 sm:px-6 py-4 space-y-2">
+        <a href="index.html" class="block text-hx-dark font-medium py-2 hover:text-hx-red transition-colors text-sm">Home</a>
+        <a href="about.html" class="block text-hx-dark font-medium py-2 hover:text-hx-red transition-colors text-sm">Tentang Kami</a>
+        <a href="program.html" class="block text-hx-dark font-medium py-2 hover:text-hx-red transition-colors text-sm">Program</a>
+        <a href="harga.html" class="block text-hx-dark font-medium py-2 hover:text-hx-red transition-colors text-sm">Harga</a>
+        <a href="location.html" class="block text-hx-dark font-medium py-2 hover:text-hx-red transition-colors text-sm">Lokasi</a>
+        <a href="testimoni.html" class="block text-hx-dark font-medium py-2 hover:text-hx-red transition-colors text-sm">Testimoni</a>
+        <a href="hubungi-kami.html" class="block text-hx-dark font-medium py-2 hover:text-hx-red transition-colors text-sm">Hubungi Kami</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="page-content" class="min-h-[70vh]">
+    <section class="bg-hx-light py-16 sm:py-20 md:py-28 reveal">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-8 sm:mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-hx-dark">Hubungi Kami</h2>
+            <p class="mt-2 sm:mt-4 text-sm sm:text-base text-hx-text leading-relaxed">Isi formulir di bawah, dan kami akan menghubungi Anda melalui WhatsApp dengan penawaran terbaik.</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-sm p-4 sm:p-6 md:p-8">
+            <form id="contactForm" class="space-y-4 sm:space-y-6">
+              <!-- Nama -->
+              <div>
+                <label for="name" class="block text-sm font-medium text-hx-dark mb-2">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20" placeholder="Masukkan nama Anda">
+              </div>
+
+              <!-- Nomor WhatsApp -->
+              <div>
+                <label for="phone" class="block text-sm font-medium text-hx-dark mb-2">Nomor WhatsApp</label>
+                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20" placeholder="62812345678 (tanpa spasi atau tanda +)">
+                <p class="text-xs text-hx-text mt-1">Contoh: 6282288185014</p>
+              </div>
+
+              <!-- Jenis Kelas -->
+              <div id="classTypeDiv">
+                <label for="classType" class="block text-sm font-medium text-hx-dark mb-2">Jenis Kelas</label>
+                <select id="classType" name="classType" class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20">
+                  <option value="">-- Pilih Jenis Kelas --</option>
+                  <option value="Online (Zoom/Google Meet)">Online (Zoom/Google Meet)</option>
+                  <option value="Offline (Tatap Muka - Toapaya Selatan)">Offline (Tatap Muka - Toapaya Selatan)</option>
+                </select>
+              </div>
+
+              <!-- Paket -->
+              <div>
+                <label for="package" class="block text-sm font-medium text-hx-dark mb-2">Paket</label>
+                <select id="package" name="package" required class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20">
+                  <option value="">-- Pilih Paket --</option>
+                  <option value="Reguler (Rp 350.000-450.000/bulan, 8x)">Reguler (8x pertemuan/bulan)</option>
+                  <option value="Intensif (Rp 500.000/bulan, 12x)">Intensif (12x pertemuan/bulan)</option>
+                  <option value="Private (Rp 90.000/sesi)">Private (Rp 90.000/sesi, fleksibel)</option>
+                </select>
+              </div>
+
+              <!-- Jenis Kelas untuk Private (hanya tampil ketika Private dipilih) -->
+              <div id="privateClassTypeDiv" style="display: none;">
+                <label for="privateClassType" class="block text-sm font-medium text-hx-dark mb-2">Format Kelas Private</label>
+                <select id="privateClassType" name="privateClassType" class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20">
+                  <option value="">-- Pilih Format --</option>
+                  <option value="Online (Zoom/Google Meet)">Online (Zoom/Google Meet)</option>
+                  <option value="Offline (Tatap Muka - Toapaya Selatan)">Offline (Tatap Muka - Toapaya Selatan)</option>
+                  <option value="Hybrid (Online & Offline Fleksibel)">Hybrid (Online & Offline Fleksibel)</option>
+                </select>
+              </div>
+
+              <!-- Pengajar -->
+              <div>
+                <label for="teacher" class="block text-sm font-medium text-hx-dark mb-2">Pengajar</label>
+                <select id="teacher" name="teacher" required class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20">
+                  <option value="">-- Pilih Pengajar --</option>
+                  <option value="Anggini (Pengajar Utama)">Anggini (Pengajar Utama)</option>
+                  <option value="Tidak Ada Preferensi">Tidak Ada Preferensi</option>
+                </select>
+              </div>
+
+              <!-- Kebutuhan -->
+              <div>
+                <label for="needs" class="block text-sm font-medium text-hx-dark mb-2">Kebutuhan & Tujuan Belajar</label>
+                <textarea id="needs" name="needs" rows="4" class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20" placeholder="Contoh: Saya ingin belajar untuk bekerja di perusahaan China, atau untuk traveling ke China, dll."></textarea>
+              </div>
+
+              <!-- CTA Button -->
+              <div class="pt-4">
+                <button type="submit" class="btn-secondary w-full text-center">📱 Lanjut ke WhatsApp</button>
+              </div>
+            </form>
+
+            <div class="mt-6 pt-6 border-t border-hx-border text-center">
+              <p class="text-sm text-hx-text">Atau hubungi langsung: <a href="https://wa.me/6282288185014" target="_blank" class="text-hx-red font-medium hover:text-hx-secondary">+62 822-8818-5014</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full site-footer">
+    <div class="container mx-auto px-6 py-12 grid grid-cols-12 gap-8">
+      <div class="col-span-12 md:col-span-4">
+        <h3 class="text-lg font-semibold text-hx-dark">HuaXin Class</h3>
+        <p class="text-sm text-hx-text mt-3 leading-relaxed">Belajar Mandarin dengan Hati — kelas ramah pemula & interaktif.</p>
+        <div class="mt-5 text-sm space-y-2">
+          <div class="text-hx-text">📍 Toapaya Selatan, Bintan</div>
+          <div class="text-hx-text">📞 +62 822-8818-5014</div>
+          <div class="text-hx-text">✉️ angginisittin@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="col-span-12 md:col-span-4">
+        <h4 class="font-semibold text-hx-dark">Navigasi</h4>
+        <ul class="mt-4 space-y-3 text-sm text-hx-text">
+          <li><a href="index.html" class="hover:text-hx-red transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-hx-red transition-colors">Tentang Kami</a></li>
+          <li><a href="program.html" class="hover:text-hx-red transition-colors">Program</a></li>
+          <li><a href="harga.html" class="hover:text-hx-red transition-colors">Harga</a></li>
+          <li><a href="location.html" class="hover:text-hx-red transition-colors">Lokasi</a></li>
+          <li><a href="testimoni.html" class="hover:text-hx-red transition-colors">Testimoni</a></li>
+          <li><a href="hubungi-kami.html" class="hover:text-hx-red transition-colors">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="col-span-12 md:col-span-4">
+        <h4 class="font-semibold text-hx-dark mb-3">Lokasi Kelas</h4>
+        <div class="rounded-lg overflow-hidden shadow-sm mb-4" style="height: 200px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0319476487405!2d104.2389!3d0.9167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d6c8b9c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sToapaya%20Selatan%2C%20Bintan!5e0!3m2!1sid!2sid!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="text-sm text-hx-text mb-3">Toapaya Selatan, Bintan — klik tombol di bawah untuk melihat peta lengkap dan rute.</p>
+        <div class="flex gap-3 mb-6">
+          <a href="location.html" class="btn-primary">Lihat Lokasi</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Toapaya+Selatan+Bintan" target="_blank" class="btn-secondary">Dapatkan Rute</a>
+        </div>
+
+        <h4 class="font-semibold text-hx-dark">Sosial Media</h4>
+        <div class="mt-3 flex gap-4">
+          <a href="https://www.instagram.com/giniiisn?igsh=MXg3ZXpqNGI1b2U0OA==" target="_blank" aria-label="Instagram" class="text-hx-text hover:text-hx-red transition-colors text-sm">Instagram</a>
+        </div>
+      </div>
+
+      <div class="col-span-12 border-t border-hx-border pt-8 text-center text-xs text-hx-text opacity-70">
+        © <span id="year">2025</span> HuaXin Class — Semua hak dilindungi
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Show/hide class type fields based on package selection
+    document.getElementById('package').addEventListener('change', function() {
+      const isPrivate = this.value.includes('Private');
+      document.getElementById('classTypeDiv').style.display = isPrivate ? 'none' : 'block';
+      document.getElementById('privateClassTypeDiv').style.display = isPrivate ? 'block' : 'none';
+      
+      // Update required attribute
+      document.getElementById('classType').required = !isPrivate;
+      document.getElementById('privateClassType').required = isPrivate;
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const package_val = document.getElementById('package').value;
+      const teacher = document.getElementById('teacher').value;
+      const needs = document.getElementById('needs').value;
+      
+      // Determine class type based on package
+      let classType = '';
+      if (package_val.includes('Private')) {
+        classType = document.getElementById('privateClassType').value;
+      } else {
+        classType = document.getElementById('classType').value;
+      }
+
+      // Validate phone number
+      if (!phone || phone.length < 10) {
+        alert('Nomor WhatsApp harus valid (minimal 10 digit)');
+        return;
+      }
+
+      // Validate class type selection
+      if (!classType) {
+        alert('Pilih jenis/format kelas terlebih dahulu');
+        return;
+      }
+
+      // Build WhatsApp message
+      let message = `Halo HuaXin Class! 👋\n\n`;
+      message += `Nama: ${name}\n`;
+      message += `Nomor WhatsApp: ${phone}\n`;
+      message += `Jenis Kelas: ${classType}\n`;
+      message += `Paket: ${package_val}\n`;
+      message += `Preferensi Pengajar: ${teacher}\n`;
+      message += `Kebutuhan: ${needs}\n\n`;
+      message += `Mohon hubungi saya untuk info lebih lanjut. Terima kasih!`;
+
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(message);
+
+      // Redirect to WhatsApp
+      window.location.href = `https://wa.me/${phone}?text=${encodedMessage}`;
+    });
+  </script>
+</body>
+</html>
