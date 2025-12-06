@@ -30,6 +30,10 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.png">
+  <link rel="shortcut icon" type="image/jpeg" href="assets/img/logo.jpg">
 </head>
 <body class="antialiased text-hx-text bg-hx-light">
   <header class="w-full z-40 site-header">
@@ -37,9 +41,7 @@
       <div class="grid grid-cols-12 items-center gap-2 sm:gap-4">
         <div class="col-span-8 sm:col-span-6 md:col-span-3 min-w-0">
           <a href="index.html" class="flex items-center gap-2 sm:gap-3">
-            <div class="w-9 sm:w-10 h-9 sm:h-10 rounded-lg flex-shrink-0 flex items-center justify-center" style="background:linear-gradient(135deg,#D62828,#F5B700);">
-              <span class="text-white font-bold text-sm sm:text-base">HX</span>
-            </div>
+            <img src="assets/img/logo.png" alt="HuaXin Class Logo" class="w-9 sm:w-10 h-9 sm:h-10 rounded-lg flex-shrink-0 object-cover">
             <div class="min-w-0">
               <h1 class="text-sm sm:text-lg font-semibold text-hx-dark truncate">HuaXin Class</h1>
               <p class="text-xs text-hx-text opacity-90 hidden sm:block">华心课堂 (Huáxīn Kètáng)</p>
@@ -119,7 +121,7 @@
                 <select id="package" name="package" required class="w-full px-4 py-2 border border-hx-border rounded-lg focus:outline-none focus:border-hx-red focus:ring-2 focus:ring-hx-red focus:ring-opacity-20">
                   <option value="">-- Pilih Paket --</option>
                   <option value="Reguler (Rp 350.000-450.000/bulan, 8x)">Reguler (8x pertemuan/bulan)</option>
-                  <option value="Intensif (Rp 500.000/bulan, 12x)">Intensif (12x pertemuan/bulan)</option>
+                  <option value="Intensif (Rp 1.800.000/bulan, 12x)">Intensif (12x pertemuan/bulan)</option>
                   <option value="Private (Rp 90.000/sesi)">Private (Rp 90.000/sesi, fleksibel)</option>
                 </select>
               </div>
@@ -153,12 +155,16 @@
 
               <!-- CTA Button -->
               <div class="pt-4">
-                <button type="submit" class="btn-secondary w-full text-center">📱 Lanjut ke WhatsApp</button>
+                <button type="submit" class="btn-secondary w-full text-center">Kirim</button>
               </div>
             </form>
 
             <div class="mt-6 pt-6 border-t border-hx-border text-center">
-              <p class="text-sm text-hx-text">Atau hubungi langsung: <a href="https://wa.me/6282288185014" target="_blank" class="text-hx-red font-medium hover:text-hx-secondary">+62 822-8818-5014</a></p>
+              <p class="text-sm text-hx-text mb-4">Atau hubungi langsung: <a href="https://wa.me/6282288185014" target="_blank" class="text-hx-red font-medium hover:text-hx-secondary">Admin HuaXin Class</a></p>
+              <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="pengajar.html" class="btn-secondary inline-block">Lihat Pengajar</a>
+                <a href="https://wa.me/6282288185014" target="_blank" class="btn-primary inline-block">Hubungi Pengajar</a>
+              </div>
             </div>
           </div>
         </div>
