@@ -2,15 +2,15 @@
    CORE VARIABLES (COLOR SYSTEM) - PROFESSIONAL PALETTE
    ========================================================= */
 :root{
-  --hx-primary: #D62828; /* Merah brand */
-  --hx-secondary: #F5B700; /* Emas */
+  --hx-primary: #D62828; 
+  --hx-secondary: #F5B700; 
   --hx-dark: #22222A;
   --hx-light: #F2F2F2;
   --hx-white: #ffffff;
   --hx-text: #333333;
   --hx-border: #EAEAEA;
 
-  /* Glass defaults tuned to new palette */
+  
   --glass-bg: rgba(255,255,255,0.7);
   --glass-border: rgba(0,0,0,0.06);
   --glass-shadow: rgba(0,0,0,0.06);
